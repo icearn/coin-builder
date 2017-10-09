@@ -22,7 +22,7 @@ RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN aptitude install -y build-essential libtool autotools-dev autoconf libssl-dev unzip yasm zip pkg-config checkinstall
 
 # Libraries required for building.
-RUN aptitude install -y libdb5.1-dev libdb5.1++-dev libboost-all-dev
+RUN aptitude install -y libdb5.1-dev libdb5.1++-dev libboost-all-dev ntp git libqrencode-dev libevent-dev
 
 # Gold linker is much faster than standard linker.
 RUN apt-get install -y binutils-gold
