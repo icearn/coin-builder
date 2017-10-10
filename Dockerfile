@@ -23,6 +23,7 @@ RUN aptitude install -y build-essential libtool autotools-dev autoconf libssl-de
 
 # Libraries required for building.
 RUN aptitude install -y libdb5.1-dev libdb5.1++-dev libboost-all-dev ntp git libqrencode-dev libevent-dev
+RUN apt-get install -y libdb++-dev
 
 # Gold linker is much faster than standard linker.
 RUN apt-get install -y binutils-gold
